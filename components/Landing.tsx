@@ -17,7 +17,7 @@ const Landing = () => {
           <Link href="#products">
             <Button title="Buy Now" />
           </Link>
-          <a className="link text-lg">Learnmore</a>
+          <a className="link text-lg">Senthamarai-Apparels</a>
         </div>
       </div>
       <div className="relative hidden h-[450px] w-[450px] transition-all duration-500 md:inline lg:h-[650px] lg:w-[600]">
