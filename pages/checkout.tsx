@@ -12,8 +12,14 @@ import Stripe from "stripe";
 import { fetchPostJSON } from "../util/api-helpers";
 import getStripe from "../util/get-stripejs";
 import { BiRupee } from "react-icons/bi";
+import toast from "react-hot-toast";
 
 function Checkout() {
+  const notavailable = () => {
+    toast.error(`EMI option coming soon`, {
+      position: "bottom-center",
+    });
+  };
   const items = useSelector(selectBasketItems);
   const basketTotal = useSelector(selectBasketTotal);
   const router = useRouter();
@@ -106,7 +112,7 @@ function Checkout() {
                   </div>
                   <div className="flex justify-between">
                     <div className="flex flex-col gap-x-1 lg:flex-row">
-                      Estimated tax for:{" "}
+                      Estimated tax for:
                       <p className="flex cursor-pointer items-end text-blue-500 hover:underline">
                         Enter zip code
                         <ChevronDownIcon className="h-6 w-6" />
@@ -141,7 +147,10 @@ function Checkout() {
                         1500/month. at 0% intresrt
                       </span>
                     </h4>
-                    <Button title="Check Out with Credit Card" />
+                    <Button
+                      onClick={notavailable}
+                      title="Check Out with Credit Card"
+                    />
                     <p className="mt-2 max-w-[240px] text-[13px]">
                       No cost EMI
                     </p>

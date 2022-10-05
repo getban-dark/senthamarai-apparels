@@ -17,7 +17,7 @@ const Header = () => {
   const items = useSelector(selectBasketItems);
   return (
     <header className="sticky top-0 z-30 flex w-full items-center justify-between bg-slate-200 p-4">
-      <div className="flex items-center justify-center md:w-1/5">
+      <div className="flex items-center justify-center md:w-1/6">
         <Link href="/">
           <div className="relative h-10 w-14 ">
             <Image src="/lotus.png" layout="fill" objectFit="contain" />
@@ -33,8 +33,7 @@ const Header = () => {
         <a className="headerLink link"> Support </a>
         <a className="headerLink link"> Business </a>
       </div>
-      <div className=" flex items-center justify-center gap-x-4 md:w-1/5">
-        <MagnifyingGlassIcon className="headericon" />
+      <div className=" flex items-center justify-center gap-x-4 md:w-1/6">
         <Link href="/checkout">
           <div className="relative cursor-pointer">
             {items.length > 0 && (

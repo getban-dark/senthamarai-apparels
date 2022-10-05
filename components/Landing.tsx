@@ -13,11 +13,11 @@ const Landing = () => {
           <span className="block">The New You.</span>
           <span className="block">Wear better, look better.</span>
         </h1>
-        <div className="space-x-8">
+        <div className="md:space-x-8 gap-y-3 md:flex-row flex-col flex md:items-center">
           <Link href="#products">
             <Button title="Buy Now" />
           </Link>
-          <a className="link text-lg">Senthamarai-Apparels</a>
+          <a className="link text-lg mr-auto ">Senthamarai-Apparels</a>
         </div>
       </div>
       <div className="relative hidden h-[450px] w-[450px] transition-all duration-500 md:inline lg:h-[650px] lg:w-[600]">
