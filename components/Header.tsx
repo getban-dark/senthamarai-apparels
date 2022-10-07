@@ -25,14 +25,6 @@ const Header = () => {
         </Link>
       </div>
 
-      <div className=" hidden flex-1 items-center justify-center space-x-8 md:flex ">
-        <Link href="#products">
-          <a className="headerLink link"> Products </a>
-        </Link>
-        <a className="headerLink link"> Explore </a>
-        <a className="headerLink link"> Support </a>
-        <a className="headerLink link"> Business </a>
-      </div>
       <div className=" flex items-center justify-center gap-x-4 md:w-1/6">
         <Link href="/checkout">
           <div className="relative cursor-pointer">
